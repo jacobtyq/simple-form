@@ -1,0 +1,192 @@
+/*
+	This font software is the property of Commercial Type.
+
+	You may not modify the font software, use it on another website, or install it on a computer.
+
+	License information is available at http://commercialtype.com/eula
+	For more information please visit Commercial Type at http://commercialtype.com or email us at info[at]commercialtype.com
+
+	Copyright (C) 2016 Schwartzco Inc.
+	1512-PNDUFW
+*/
+
+
+	.SanomatGrabWeb-Medium {
+	font-family: "Sanomat Grab Web";
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	}
+
+	.SanomatGrabWeb-Bold {
+	font-family: "Sanomat Grab Web";
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	}
+
+	.SanomatGrabWeb-BoldItalic {
+	font-family: "Sanomat Grab Web";
+	font-weight: 700;
+	font-style: italic;
+	font-stretch: normal;
+	}
+
+	.SanomatGrabWeb-MediumItalic {
+	font-family: "Sanomat Grab Web";
+	font-weight: 600;
+	font-style: italic;
+	font-stretch: normal;
+	}
+
+	.SanomatGrabWeb-Light {
+	font-family: "Sanomat Grab Web";
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	}
+
+	.SanomatGrabWeb-XBoldItalic {
+	font-family: "Sanomat Grab Web";
+	font-weight: 800;
+	font-style: italic;
+	font-stretch: normal;
+	}
+
+	.SanomatGrabWeb-RegularItalic {
+	font-family: "Sanomat Grab Web";
+	font-weight: 500;
+	font-style: italic;
+	font-stretch: normal;
+	}
+
+	.SanomatGrabWeb-LightItalic {
+	font-family: "Sanomat Grab Web";
+	font-weight: 400;
+	font-style: italic;
+	font-stretch: normal;
+	}
+
+	.SanomatGrabWeb-Regular {
+	font-family: "Sanomat Grab Web";
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	}
+
+	.SanomatGrabWeb-XBold {
+	font-family: "Sanomat Grab Web";
+	font-weight: 800;
+	font-style: normal;
+	font-stretch: normal;
+	}
+
+	@font-face {
+	font-family: "Sanomat Grab Web";
+	src: url("Sanomat Grab Web-Medium.eot");
+	src: url("Sanomat Grab Web-Medium.eot?#iefix") format("embedded-opentype"),
+	url("Sanomat Grab Web-Medium.woff2") format("woff2"),
+	url("Sanomat Grab Web-Medium.woff") format("woff");
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	}
+
+	@font-face {
+	font-family: "Sanomat Grab Web";
+	src: url("Sanomat Grab Web-Bold.eot");
+	src: url("Sanomat Grab Web-Bold.eot?#iefix") format("embedded-opentype"),
+	url("Sanomat Grab Web-Bold.woff2") format("woff2"),
+	url("Sanomat Grab Web-Bold.woff") format("woff");
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	}
+
+	@font-face {
+	font-family: "Sanomat Grab Web";
+	src: url("Sanomat Grab Web-Bold Italic.eot");
+	src: url("Sanomat Grab Web-Bold Italic.eot?#iefix") format("embedded-opentype"),
+	url("Sanomat Grab Web-Bold Italic.woff2") format("woff2"),
+	url("Sanomat Grab Web-Bold Italic.woff") format("woff");
+	font-weight: 700;
+	font-style: italic;
+	font-stretch: normal;
+	}
+
+	@font-face {
+	font-family: "Sanomat Grab Web";
+	src: url("Sanomat Grab Web-Medium Italic.eot");
+	src: url("Sanomat Grab Web-Medium Italic.eot?#iefix") format("embedded-opentype"),
+	url("Sanomat Grab Web-Medium Italic.woff2") format("woff2"),
+	url("Sanomat Grab Web-Medium Italic.woff") format("woff");
+	font-weight: 600;
+	font-style: italic;
+	font-stretch: normal;
+	}
+
+	@font-face {
+	font-family: "Sanomat Grab Web";
+	src: url("Sanomat Grab Web-Light.eot");
+	src: url("Sanomat Grab Web-Light.eot?#iefix") format("embedded-opentype"),
+	url("Sanomat Grab Web-Light.woff2") format("woff2"),
+	url("Sanomat Grab Web-Light.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	}
+
+	@font-face {
+	font-family: "Sanomat Grab Web";
+	src: url("Sanomat Grab Web-XBold Italic.eot");
+	src: url("Sanomat Grab Web-XBold Italic.eot?#iefix") format("embedded-opentype"),
+	url("Sanomat Grab Web-XBold Italic.woff2") format("woff2"),
+	url("Sanomat Grab Web-XBold Italic.woff") format("woff");
+	font-weight: 800;
+	font-style: italic;
+	font-stretch: normal;
+	}
+
+	@font-face {
+	font-family: "Sanomat Grab Web";
+	src: url("Sanomat Grab Web-Regular Italic.eot");
+	src: url("Sanomat Grab Web-Regular Italic.eot?#iefix") format("embedded-opentype"),
+	url("Sanomat Grab Web-Regular Italic.woff2") format("woff2"),
+	url("Sanomat Grab Web-Regular Italic.woff") format("woff");
+	font-weight: 500;
+	font-style: italic;
+	font-stretch: normal;
+	}
+
+	@font-face {
+	font-family: "Sanomat Grab Web";
+	src: url("Sanomat Grab Web-Light Italic.eot");
+	src: url("Sanomat Grab Web-Light Italic.eot?#iefix") format("embedded-opentype"),
+	url("Sanomat Grab Web-Light Italic.woff2") format("woff2"),
+	url("Sanomat Grab Web-Light Italic.woff") format("woff");
+	font-weight: 400;
+	font-style: italic;
+	font-stretch: normal;
+	}
+
+	@font-face {
+	font-family: "Sanomat Grab Web";
+	src: url("Sanomat Grab Web-Regular.eot");
+	src: url("Sanomat Grab Web-Regular.eot?#iefix") format("embedded-opentype"),
+	url("Sanomat Grab Web-Regular.woff2") format("woff2"),
+	url("Sanomat Grab Web-Regular.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	}
+
+	@font-face {
+	font-family: "Sanomat Grab Web";
+	src: url("Sanomat Grab Web-XBold.eot");
+	src: url("Sanomat Grab Web-XBold.eot?#iefix") format("embedded-opentype"),
+	url("Sanomat Grab Web-XBold.woff2") format("woff2"),
+	url("Sanomat Grab Web-XBold.woff") format("woff");
+	font-weight: 800;
+	font-style: normal;
+	font-stretch: normal;
+	}
