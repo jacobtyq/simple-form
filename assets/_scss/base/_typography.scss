@@ -1,1 +1,45 @@
 //Typography
+//em-base
+$em-base: 16px !global;
+
+//Base Fonts
+$base-font-size: $em-base;
+$base-line-height: 1.5;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: $heading-line-height;
+  margin-bottom: $small-spacing;
+}
+h1 {
+  margin-top: $base-padding;
+  font-size: $h1-font-size;
+}
+h2 {
+  margin-top: $base-spacing;
+  font-size: $h2-font-size;
+}
+h3 {
+  margin-top: $base-spacing;
+  font-size: $h3-font-size;
+}
+h4 {
+  margin-top: $base-padding;
+  font-size: $h4-font-size;
+}
+h5 {
+  margin-top: $base-padding;
+  font-size: $h5-font-size;
+}
+h6 {
+  margin-top: $base-padding;
+  font-size: $h6-font-size;
+}
+
+p {
+  margin-bottom: $base-spacing;
+}

@@ -1,0 +1,48 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+    <div class = "container">
+        <section class = "header"></section>
+        <ul class = "breadcrumb container">
+            <li class = "complete">Step 1</li>
+            <li><span class ="right-arrow"></span></li>
+            <li class = "active">Step 2</li>
+            <li><span class ="right-arrow"></span></li>
+            <li class = "default">Step 3</li>
+        </ul>
+        <section class = "body">
+            <form id = "contact-details" action="page-three.html">
+            <p class = "section-title">Your Contact Information</p>    
+            <p>Fill in the following details</p>
+            <ul>
+                <li>
+                    <label for = "first name">Your First Name</label>
+                    <input type="text" name = "firstname" placeholder="Your First Name" required/>               
+                </li>
+                <li>
+                    <label for = "last name">Your Last Name</label>
+                    <input type="text" name = "lastname"  placeholder="Your Last Name" required/>               
+                </li>
+                <li>
+                    <label for = "contact number">Contact Number</label>
+                    <input type="text" name = "contactnumber" placeholder="Contact Number" required/>               
+                </li>
+                <li>
+                    <label for = "address">Address</label>                    
+                    <textarea placeholder="Address" name = "address" row="3" required></textarea>
+                </li>
+            </ul>
+            <input class="secondary-cta" type="submit" id="submit-form" value="NEXT">                
+            </form>                
+        </section>
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

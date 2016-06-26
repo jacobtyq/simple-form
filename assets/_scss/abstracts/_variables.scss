@@ -1,1 +1,49 @@
 //Variables
+//COLORS
+$header-color: #363A45;
+$text-color: #565D6B;
+$bg: #F7F9FB;
+
+
+//Cta
+$primary-cta: #00B140;
+$secondary-cta: #CCD6DD;
+$cta-text: #FFFFFF;
+
+//Breadcrumb colors
+$breadcrumb-active: #4A4A4A;
+$breadcrumb-default: #9B9B9B;
+$breadcrumb-complete: #00B23E;
+$breadcrumb-symbol-bg: $secondary-cta;
+$breadcrumb-symbol: #333122;
+
+//Input colors
+$input-text-field: #EAEFF2;
+$input-text-field-border: $secondary-cta;
+$input-text-default: #A3A9B2;
+$input-text-active: $header-color;
+$input-label: $text-color;
+$input-text-error: #D64425;
+
+//Upload colors
+$upload-bg: $input-text-field;
+$upload-border: $secondary-cta;
+
+
+//TYPOGRAPHY
+$sm: 'Sanomat Regular', sans-serif;
+
+
+//Heading Fonts
+$heading-line-height: $modular-scale-ratio; //1.25
+$h1-font-size: modular-scale(4); //2.441rem
+$h2-font-size: modular-scale(3); //1.953rem
+$h3-font-size: modular-scale(2); //1.562rem
+$h4-font-size: modular-scale(1); //1.25rem
+$h5-font-size: modular-scale(0); //1rem
+$h6-font-size: modular-scale(-1); //.8rem
+
+//Spacing
+$base-spacing: 1.5rem;
+$small-spacing: $base-spacing / 3; //0.5rem
+$base-padding: 1rem;

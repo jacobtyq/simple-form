@@ -1,5 +1,41 @@
-//Button
-.button {
-  color: green;
-  background: white;
+$background: #000000 !default;
+$text-color: #FFFFFF !default;
+
+//Button mixin
+@mixin button($background,$text-color) {
+    border: 0;
+    margin: 0 auto;
+    display: block;
+    width: 600px;
+    height: 80px;
+    font-size: 1.5625em;
+    border-radius: 4px;
+    padding: 1em;
+    text-align: center;    
+    background: $background;
+    color: $text-color;
+    
+    &:hover {
+        background: darken($background, 5%);        
+    }
+}
+
+button {
+    @include button($background,$text-color)
+}
+
+button.primary-cta {
+    @include button($primary-cta,$cta-text)         
+}
+
+button.secondary-cta {
+    @include button($secondary-cta,$cta-text)         
+}
+
+input.primary-cta {
+    @include button($primary-cta,$cta-text)             
+}
+
+input.secondary-cta {
+    @include button($secondary-cta,$cta-text)             
 }

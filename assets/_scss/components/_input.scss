@@ -1,1 +1,24 @@
 //Input
+input[type="text"] {
+    display: block;
+    color: $input-text-default;
+    background: $input-text-field;
+    border: $input-text-field-border 1px solid;
+    border-radius: 4px;
+    font-size: 1.75em;
+    padding: 22px 44px 17px 23px;
+    width: 600px;
+    
+    &:active, &:focus {
+        color: $input-text-active;
+    }
+}
+
+input[type="file"] {
+    display: block;
+}
+
+textarea {
+    @extend input[type="text"];
+    resize: none;
+}

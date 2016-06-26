@@ -1,0 +1,38 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">      
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+<body>
+    <div class = "container">
+        <section class = "header"></section>
+        <ul class = "breadcrumb container">
+            <li class = "active">Step 1</li>
+            <li><span class ="right-arrow"></span></li>
+            <li class = "default">Step 2</li>
+            <li><span class ="right-arrow"></span></li>
+            <li class = "default">Step 3</li>
+        </ul>
+        <section class = "body">
+            <p class = "section-title">Upload Photo</p>    
+            <div class = "file-upload">
+                <div class = "container" id = "photo-upload">
+                    <div id = "circle">
+                        <div id = "plus"></div>        
+                    </div>
+                    <p>Add Photo</p>            
+                </div>
+                <input class = "" type = "file">                
+            </div>
+            <p>Please upload any photo here</p>
+            <canvas id = "photo-canvas"></canvas>
+            <button class = "secondary-cta">NEXT</button>            
+        </section>
+    </div>
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>

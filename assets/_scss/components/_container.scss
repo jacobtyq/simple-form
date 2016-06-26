@@ -1,0 +1,6 @@
+.container {
+    @include outer-container;
+    max-width: 640px;
+    max-height: 990px;
+    background: $cta-text;
+}

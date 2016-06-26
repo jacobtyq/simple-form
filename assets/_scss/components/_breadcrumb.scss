@@ -1,0 +1,50 @@
+ul.breadcrumb {
+    display: flex;
+    height: 70px;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    
+    li {
+        display: inline-block;
+        font-size: 1.5em;
+        font-family: $sm;
+        width: 19%;
+    }
+    
+    li.active {
+        color: $breadcrumb-active;
+    }
+    
+    li.default {
+        color: $breadcrumb-default;
+    }
+    
+    li.complete {
+        color: $breadcrumb-complete;        
+    }
+    
+    .right-arrow {
+          display: inline-block;
+          width: 1em;
+          height: 1em;
+          border-radius: 50%;
+          background: $secondary-cta;
+          margin-left: 1.2em;
+        
+        &:after {
+            content: '';
+            display: inline-block;
+            width: 0.4em;
+            height: 0.4em;
+            border-top: 0.1em solid $breadcrumb-symbol;
+            border-right: 0.1em solid $breadcrumb-symbol;
+            -moz-transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            top: 7px;
+            left: 6px;
+            position: relative;            
+        }
+    }
+}
