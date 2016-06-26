@@ -2331,7 +2331,7 @@ input.secondary-cta {
   input.secondary-cta:hover {
     background: #bdcad3; }
 
-input[type="text"], textarea {
+input[type="text"], textarea, input[type="number"] {
   display: block;
   color: #A3A9B2;
   background: #EAEFF2;
@@ -2340,25 +2340,18 @@ input[type="text"], textarea {
   font-size: 1.75em;
   padding: 22px 44px 17px 23px;
   width: 600px; }
-  input[type="text"]:active, textarea:active, input[type="text"]:focus, textarea:focus {
+  input[type="text"]:active, textarea:active, input[type="text"]:focus, textarea:focus, input[type="number"]:active, input[type="number"]:focus {
     color: #363A45; }
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0; }
 
 input[type="file"] {
   display: block; }
 
 textarea {
   resize: none; }
-
-label {
-  display: block;
-  border: 0;
-  font-size: 0.8125em;
-  /* 13/16 */
-  position: absolute;
-  top: 1.23em;
-  left: 1.23em;
-  color: #f1773b;
-  opacity: 1; }
 
 p.section-title {
   font-size: 1.75em;
@@ -2369,6 +2362,9 @@ p {
   font-size: 1.5em;
   color: #565D6B;
   font-family: "Sanomat Regular", sans-serif; }
+
+.text-align-center {
+  text-align: center; }
 
 .file-upload {
   position: relative;
@@ -2388,6 +2384,12 @@ p {
     top: 0;
     background: #EAEFF2;
     cursor: pointer; }
+  .file-upload #photo-container {
+    margin: 0;
+    padding: 0;
+    width: 600px;
+    height: 260px;
+    display: none; }
   .file-upload div#plus {
     width: 18px;
     height: 18px;
@@ -2418,6 +2420,13 @@ p {
     cursor: pointer;
     font-size: 20px;
     z-index: 2; }
+
+#photo-form input[type="file"] {
+  opacity: 0; }
+#photo-form label {
+  position: relative;
+  top: -30px;
+  left: 0; }
 
 .container {
   max-width: 1200px;
@@ -2496,6 +2505,7 @@ label {
   /* 21/16 */
   position: absolute;
   top: 0.35em;
+  left: 1.2em;
   color: #565D6B;
   opacity: 1;
   font-family: "Sanomat Regular", sans-serif; }

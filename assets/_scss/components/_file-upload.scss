@@ -19,7 +19,15 @@
         top: 0;
         background: $input-text-field;
         cursor: pointer;        
-    }    
+    }
+    
+    #photo-container {
+        margin: 0;
+        padding: 0;
+        width: 600px;
+        height: 260px;
+        display: none;
+    }
     
     div#plus {
         width: 18px;
@@ -57,5 +65,18 @@
 //        width: 600px;
 //        height: 260px;
         z-index: 2;
+    }
+    
+}
+
+#photo-form {
+    input[type="file"] {
+        opacity: 0;
+    }
+
+    label {
+        position: relative;
+        top: -30px;
+        left: 0;
     }
 }

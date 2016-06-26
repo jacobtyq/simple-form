@@ -1,5 +1,5 @@
 //Input
-input[type="text"] {
+input[type="text"], input[type="number"] {
     display: block;
     color: $input-text-default;
     background: $input-text-field;
@@ -12,6 +12,11 @@ input[type="text"] {
     &:active, &:focus {
         color: $input-text-active;
     }
+}
+
+input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none; 
+  margin: 0;
 }
 
 input[type="file"] {

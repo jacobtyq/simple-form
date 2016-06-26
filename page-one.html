@@ -16,19 +16,23 @@
             <li class = "default">Step 3</li>
         </ul>
         <section class = "body">
-            <p class = "section-title">Upload Photo</p>    
-            <div class = "file-upload">
-                <div class = "container" id = "photo-upload">
-                    <div id = "circle">
-                        <div id = "plus"></div>        
+            <form id = "photo-form" method="post" action="page-two.html">            
+                <p class = "section-title">Upload Photo</p>    
+                <div class = "file-upload">
+                    <div class = "container" id = "photo-upload">
+                        <div id = "circle">
+                            <div id = "plus"></div>        
+                        </div>
+                        <p>Add Photo</p>            
                     </div>
-                    <p>Add Photo</p>            
+                    <div class = "container" id = "photo-container">
+                        <canvas id = "photo-canvas" width = "600px" height = "260px"></canvas>                         
+                    </div>
                 </div>
-                <input class = "" type = "file">                
-            </div>
-            <p>Please upload any photo here</p>
-            <canvas id = "photo-canvas"></canvas>
-            <button class = "secondary-cta">NEXT</button>            
+                <p>Please upload any photo here</p>
+                <input id = "file-uploader" type = "file" name = "file" accept="image/*" required/>                       
+                <input class="secondary-cta" type="submit" id="submit-photo" value="NEXT">                
+            </form>    
         </section>
     </div>
     <script src="./assets/js/jquery.min.js"></script>

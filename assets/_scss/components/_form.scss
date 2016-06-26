@@ -17,6 +17,7 @@ label {
     font-size: 1.3125em; /* 21/16 */
     position: absolute; 
     top: 0.35em;
+    left: 1.2em;    
     color: $text-color;
     opacity: 1;
     font-family: $sm;
@@ -32,7 +33,6 @@ label {
     label:first-child {
         opacity: 0;
         @include transition(opacity 0.3s ease-in);
-//        @include transition(top 0.3s ease-in-out);
     }
 }
 

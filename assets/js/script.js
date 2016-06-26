@@ -1,10 +1,4 @@
 $(document).ready(function(){
-    //File Upload
-    $('#photo-upload').click(function() {
-        console.log("asdasdads");
-        $('input[type=file]').trigger('click');
-    });
-    
     //Form validation
     $("#contact-details").validate({
         rules: {
@@ -14,8 +8,8 @@ $(document).ready(function(){
             address: "required"
         },
         messages: {
-            firstname: "Please enter your firstname",
-            lastname: "Please enter your lastname",
+            firstname: "Please enter your first name",
+            lastname: "Please enter your last name",
             contactnumber: "Please enter your contact number",
             address: "Please enter your address"
         }
@@ -41,12 +35,6 @@ $(document).ready(function(){
                 empty = false;
             }                    
         } 
-        else if (e.type == 'blur') {
-            // blur code here
-        } 
-        else if (e.type == 'focus') {
-            // focus code here
-        } 
         
         //Change CTA button to green
         if (!$('form li').hasClass('hide-label')) {
@@ -55,4 +43,44 @@ $(document).ready(function(){
             $('#submit-form').removeClass('primary-cta').addClass('secondary-cta');            
         }
     });
+    
+    $("#photo-form").validate({
+        rules: {
+            field: {
+                required: true                   
+            }
+        },
+        messages: {
+            file: "You need to upload a photo"
+        }
+    });    
+    
+    //File Upload
+    $('#photo-upload').click(function() {
+        $('input[type=file]').trigger('click');
+    });    
+
+    //Photo Upload    
+    var fileUploader = document.getElementById('file-uploader');
+    fileUploader.addEventListener('change',displayImage, false);
+    
+    var canvas = document.getElementById('photo-canvas');
+    var ctx = canvas.getContext('2d');     
+    
+    function displayImage(e){
+        var reader = new FileReader();
+        reader.onload = function(event){
+            var img = new Image();
+            img.onload = function(){
+                canvas.width = 600;
+                canvas.height = 260;
+                ctx.drawImage(img,0,0);
+            }
+            img.src = event.target.result;
+        }
+        reader.readAsDataURL(e.target.files[0]);
+        $('#photo-upload').hide();
+        $('#photo-container').show();
+        $('#submit-photo').removeClass('secondary-cta').addClass('primary-cta');                    
+    }
 });
