@@ -6,37 +6,37 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 <body>
-    <button>NEXT</button>
-    <button class = "primary-cta">NEXT</button>
-    <button class = "secondary-cta">NEXT</button>
-
-    <h1>This is a h1</h1>
-    <h2>This is a h1</h2>
-    <h3>This is a h1</h3>
-    <h4>This is a h1</h4>
-    <p class = "section-title">This is a section title</p>
-    <p>This is regular text</p>
-    
-    <label>This is a input label</label>
-    <input type="text" placeholder="Enter Search" />
-
-    <div class = "file-upload">
-        <div class = "container">
-            <div id = "circle">
-                <div id = "plus"></div>        
-            </div>
-            <p>Add Photo</p>            
-        </div>
-        <input class = "" type = "file">                
+    <div class = "container">
+        <section class = "header"></section>
+        <ul class = "breadcrumb container">
+            <li class = "active">Step 1</li>
+            <li><span class ="right-arrow"></span></li>
+            <li class = "default">Step 2</li>
+            <li><span class ="right-arrow"></span></li>
+            <li class = "default">Step 3</li>
+        </ul>
+        <section class = "body">
+            <form id = "photo-form" method="post" action="page-two.html">            
+                <p class = "section-title">Upload Photo</p>    
+                <div class = "file-upload">
+                    <div class = "container" id = "photo-upload">
+                        <div id = "circle">
+                            <div id = "plus"></div>        
+                        </div>
+                        <p>Add Photo</p>            
+                    </div>
+                    <div class = "container" id = "photo-container">
+                        <canvas id = "photo-canvas" width = "600px" height = "260px"></canvas>                         
+                    </div>
+                </div>
+                <p>Please upload any photo here</p>
+                <input id = "file-uploader" type = "file" name = "file" accept="image/*" required/>                       
+                <input class="secondary-cta" type="submit" id="submit-photo" value="NEXT">                
+            </form>    
+        </section>
     </div>
-    
-    <label>This is a label</label>
-    <label>This is another label</label>
-
-    <div class = "breadcrumb">
-        <p>Step 1</p>
-        <span class = ""></span>
-    </div>
-    
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery.validate.min.js"></script>
+    <script src="./assets/js/script-min.js"></script>
 </body>
 </html>
